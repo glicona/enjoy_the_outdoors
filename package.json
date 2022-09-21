@@ -1,0 +1,27 @@
+{
+  "name": "enjoy_the_outdoors",
+  "version": "1.0.0",
+  "description": "Creation pkg for capstone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glicona/enjoy_the_outdoors.git"
+  },
+  "keywords": [
+    "example",
+    "npm",
+    "init",
+    "capstone",
+    "2"
+  ],
+  "author": "gliconagalindo@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glicona/enjoy_the_outdoors/issues"
+  },
+  "homepage": "https://github.com/glicona/enjoy_the_outdoors#readme"
+}

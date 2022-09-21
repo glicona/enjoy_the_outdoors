@@ -1,0 +1,23 @@
+body {
+    background-image: url('../images/complement/back-ground-three.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.font-tittle{
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.font-nav-tittle{
+    font-family: monospace; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold; 
+    font-size: xxx-large;
+}
+.input-container-group {
+    margin-top: 5%;
+}
+.select-mountains {
+   width: 50%;
+}
