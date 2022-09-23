@@ -18,89 +18,22 @@
 <body class="body-mountain" >
    <!--<h1>Welcome to the Homepage!</h1>--> 
     <nav class="navbar navbar-expand-lg navbar navbar-light justify-content-center" style="background-color: #e3f2fd;" >
-        <a class="nav-link font-tittle" href="#">Mountains Information</a>        
-        <a class="navbar-brand font-nav-tittle" href="index.html" >National park finder</a>
-        <a class="nav-link font-tittle" href="#">National Parks</a>
+        <a class="navbar-brand font-nav-tittle" href="#">Mountains Information</a>        
+        <a class="nav-link font-tittle" href="index.html" >National park finder</a>
+        <a class="nav-link font-tittle" href="parks.html">National Parks</a>
     </nav>  
-    <div id="main-mountain-container" >
-        <div style="margin-top: 5%;" class="d-flex align-items-center justify-content-center">
+    <div id="main-mountain-container" class="align-items-center justify-content-center" >
+        <div style="margin-top: 1%;" class="d-flex align-items-center justify-content-center">
             <select id="selectMountains" class="form-select"   style="width:30%;" onchange="selectMountain(this.value);" >
-              <option selected>:::: select mountain ::::</option>
+              <option selected value="-1" >:::: select mountain ::::</option>
             </select>
         </div>
         <!---->
         <section class="wrapper">
             <div class="container-fostrap">
                 <div class="content">
-                    <div class="container">
-                        <div id="row-id-container" class="row" >
-                        <!--
-                            <div class="col-xs-12 col-sm-4"> 
-                                <div class="card">
-                                    <a class="img-card" >
-                                    <img src="assets/images/mountains/Adams-StoryImage_2.jpg" ></img>
-                                    </a>
-                                    <div class="card-content">
-                                        <h4 class="card-title">
-                                            <a href="#"> Bootstrap 3 Carousel FadeIn Out Effect</a>
-                                        </h4>
-                                        <p class="">
-                                            Tutorial to make a carousel bootstrap by adding more wonderful effect fadein ...
-                                        </p>
-                                    </div>
-
-                                    <div class="card-read-more">
-                                        <a href="#" class="btn btn-link btn-block">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="card">
-                                    <a class="img-card" >
-                                        <img src="assets/images/mountains/Bond-StoryImage_3.jpg" />
-                                    </a>
-                                    <div class="card-content">
-                                        <h4 class="card-title">
-                                            <a href="#"> Material Design Responsive Menu
-                                        </a>
-                                        </h4>
-                                        <p class="">
-                                            Material Design is a visual programming language made by Google. Language programming...
-                                        </p>
-                                    </div>
-                                    <div class="card-read-more">
-                                        <a href="# class="btn btn-link btn-block">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="card">
-                                <a class="img-card" >
-                                    <img src="assets/images/mountains/Cabot-StoryImg.jpg" />
-                                </a>
-                                    <div class="card-content">
-                                        <h4 class="card-title">
-                                            <a href="#">5  Button Hover Animation Effects
-                                        </a>
-                                        </h4>
-                                        <p class="">
-                                            tutorials button hover animation, although very much a hover button is very beauti...
-                                        </p>
-                                    </div>
-                                    <div class="card-read-more">
-                                        <a href="#" class="btn btn-link btn-block">
-                                            Read More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
+                    <div class=" py-2">
+                        <div id="row-id-container" class="row-custom-back row d-flex flex-row flex-nowrap overflow-auto" >
                         </div>
                     </div>
                 </div>

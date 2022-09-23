@@ -13,11 +13,17 @@ body {
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    font-size: xxx-large;
+    font-size: x-large;
 }
 .input-container-group {
     margin-top: 5%;
 }
 .select-mountains {
    width: 50%;
+}
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 95%;
+    margin-top: 5%;
 }

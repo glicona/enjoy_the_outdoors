@@ -26,7 +26,19 @@ let loadJsonData = async (path) => {
 }
 
 function selectMountain(index){
-   createNodeCard(index);
+   if(index>-1&&existMountain(index)){
+       createNodeCard(index);
+       console.log(":::::::: Created node succefull :::::::")
+    }
+}
+
+function existMountain(i){
+        const parent = document.getElementById('row-id-container');
+        const children = Array.from(parent.children);
+        const nodeIds = children.map(element => {
+           return element.id;
+        });
+    return  nodeIds.indexOf('div-column-'+i)==-1;
 }
 
 function createNodeCard(i){

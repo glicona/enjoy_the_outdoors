@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Global Style Sheet -->
+    <link rel="stylesheet" href="assets/css/park-style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Enjoy the Outdoors Capstone Starter</title>
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/load_national_parks_data.js"></script>
+    <script src="assets/scripts/parks.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body class="body-park" >
+   <!--<h1>Welcome to the Homepage!</h1>--> 
+    <nav class="navbar navbar-expand-lg navbar navbar-light justify-content-center" style="background-color: #e3f2fd;" >
+        <a class="nav-link font-tittle" href="mountains.html">Mountains Information</a>        
+        <a class="nav-link font-tittle" href="index.html" >National park finder</a>
+        <a class="navbar-brand font-nav-tittle" href="#">National Parks</a>
+    </nav>  
+    <div id="main-park-container" >
+        <div class="container">
+            <div class="row align-items-start" style="margin-top: 2%;" >
+              <div class="col"></div>
+              <div class="col">
+                    <div class="form-check form-check-inline format-font">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"  onclick="queryParks(0);" >
+                        <label class="form-check-label" for="inlineRadio1">Location</label>
+                    </div>
+                    <div class="form-check form-check-inline format-font">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="queryParks(1);" >
+                        <label class="form-check-label" for="inlineRadio2">Type</label>
+                    </div>
+                    <div class="form-check form-check-inline format-font">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onclick="searchAllParks();" >
+                        <label class="form-check-label" for="inlineRadio3">View all</label>
+                    </div>
+              </div>
+              <div class="col"></div>
+            </div>
+        </div>  
+        <div id="contentSelect" class="d-flex align-items-center justify-content-center" style="margin-top: 2%;">
+            <select id="selectLocation" class="form-select"  style="width:30%;" onchange="searchByLocation(this.value);" >
+               <option selected value="-1" >:::: select Location ::::</option>
+            </select>
+            <select id="selectTypes" class="form-select"  style="width:30%;"  onchange="searchByType(this.value);"  >
+               <option selected value="-1" >:::::::: select Type ::::::::</option>
+            </select>
+        </div>
+        <div  class="d-flex align-items-center justify-content-center">
+           <div id="contentTable" class="back-table-content tableFixHead"></div>
+        </div>
+    </div>
+</body>
+</html>

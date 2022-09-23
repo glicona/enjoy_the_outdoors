@@ -1,0 +1,24 @@
+.body-park {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/c95fe165193105.5aeb8634185a0.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.format-font{
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 2%;
+}
+.back-table-content{
+  /*  background-color: rgba(214, 216, 214, 0.7); */
+    border-radius: 20px; 
+    width: 80%;
+    margin-top: 1%;
+}
+.table-wrapper {
+    max-height: 400px;
+    overflow: auto;
+    display:inline-block;
+  }
+
+.tableFixHead          { overflow: auto; height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
